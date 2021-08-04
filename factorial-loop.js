@@ -26,3 +26,17 @@ function getFactorial(number) {
 let num = 10;
 const firstFactorial = getFactorial(num);
 console.log("Factorial of ", num, "is ", firstFactorial);
+// using motu version of for loop in function
+console.log("\nUsing motu version of for loop in a function\n");
+function getFactorialUsingWhile(number) {
+    let factorial = 1;
+    let i = 1;
+    while (i <= number) {
+        factorial = factorial * i;
+        i++;
+    }
+    return factorial;
+}
+const givenNumber = 6;
+const gotFactorial = getFactorialUsingWhile(givenNumber);
+console.log("Factorial of ", givenNumber, "is ", gotFactorial);
